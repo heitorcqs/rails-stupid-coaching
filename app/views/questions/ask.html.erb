@@ -1,0 +1,9 @@
+<h1>Faça uma pergunta</h1>
+
+<%= form_tag('/answer', method: :get) do %>
+  <%= label_tag 'question', 'Pergunta:' %>
+  <%= text_field_tag 'question' %>
+  <%= submit_tag 'Enviar' %>
+<% end %>
+
+<form>
